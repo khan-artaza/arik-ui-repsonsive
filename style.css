@@ -1,0 +1,273 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cabin+Sketch:wght@400;700&family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Chillax;
+  src: url(font/Chillax-Variable.ttf);
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #0E0E0E;
+}
+
+.navbar {
+  width: 100%;
+  height: 6rem;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.navbar nav {
+  color: #DAC5A7;
+  border: 1px solid rgba(218, 197, 167, 0.2235294118);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.navbar nav .logo {
+  font-family: Chillax;
+  font-size: 1.8rem;
+}
+.navbar nav .upr {
+  font-family: poppins;
+  font-size: 0.8rem;
+  display: none;
+}
+.navbar nav button {
+  background-color: #DAC5A7;
+  border: none;
+  outline: none;
+  padding: 1px 8px;
+  font-family: poppins;
+  font-size: 0.8rem;
+  letter-spacing: 1.2px;
+}
+
+.hero {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #DAC5A7;
+  gap: 10px;
+}
+.hero img {
+  width: 70%;
+}
+.hero h2 {
+  font-family: "Satoshi", sans-serif;
+  font-size: 3.4rem;
+  text-align: center;
+  font-weight: 100;
+}
+.hero span {
+  font-style: italic;
+  font-family: "Baskervville", serif;
+  font-weight: 100;
+}
+.hero p {
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: Chillax;
+}
+
+.marq {
+  width: 100%;
+  padding: 0 2rem;
+  position: relative;
+}
+.marq .grad-l {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  background: linear-gradient(to right, #0E0E0E, transparent);
+}
+.marq .grad-r {
+  height: 100%;
+  background: linear-gradient(to left, #0E0E0E, transparent);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+}
+.marq .marquee {
+  overflow-x: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  width: 99%;
+}
+.marq .logo {
+  animation: slide 4s linear 0s infinite;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+}
+.marq .logo img {
+  width: 2.3rem;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.selectedWork {
+  width: 100%;
+  padding: 0 2rem;
+  margin: 3rem 0;
+}
+.selectedWork h2 {
+  font-family: "Satoshi", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 100;
+  color: #DAC5A7;
+}
+.selectedWork .card-container {
+  margin: 15px 0 15px 0;
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  place-items: center;
+  grid-template-areas: "a" "b" "c" "d";
+}
+.selectedWork .card-container .card {
+  border: 1px solid rgba(218, 197, 167, 0.262745098);
+  width: 100%;
+  height: 17rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 1rem;
+}
+.selectedWork .card-container .card-info {
+  width: 90%;
+  border: 1px solid rgba(218, 197, 167, 0.4078431373);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  font-family: poppins;
+  color: #DAC5A7;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.selectedWork .card-container .card-info .left {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.selectedWork .card-container .card-info .right {
+  letter-spacing: 2;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.selectedWork .card-container .card-a {
+  grid-area: a;
+  background-image: url("images/ClfwTvpSaw5mRTAzBuRlbbRVFXQ.jpg");
+}
+.selectedWork .card-container .card-b {
+  grid-area: b;
+  background-image: url("images/Q3JdzgSl7WDRJvNOrxJbf59HFUk.jpg");
+}
+.selectedWork .card-container .card-c {
+  grid-area: c;
+  background-image: url("images/d1CAseGSNyShuL2wWI5VggbNto.jpg");
+}
+.selectedWork .card-container .card-d {
+  grid-area: d;
+  background-image: url("images/ynzulG3fWOPvwVBviGFIhteSSdE.jpg");
+}
+
+@media (min-width: 835px) {
+  html {
+    font-size: clamp(16px, 2.3vw, 32px);
+  }
+  .hero p {
+    padding: 0 60px;
+  }
+  .hero img {
+    width: 50%;
+  }
+  .selectedWork .card-container {
+    grid-template-areas: "a b" "c d";
+  }
+  .selectedWork .card-container .card-info {
+    padding: 0.1rem 1rem;
+  }
+  .navbar nav {
+    width: 60%;
+  }
+  .navbar nav .upr {
+    font-size: 0.7rem;
+    display: block;
+  }
+  .navbar nav button {
+    padding: 0.1rem 0.5rem;
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 1300px) {
+  html {
+    font-size: clamp(16px, 2.3vw, 32px);
+  }
+  .hero p {
+    padding: 0 60px;
+  }
+  .navbar nav {
+    width: 50%;
+  }
+  .navbar nav .logo {
+    font-size: 1rem;
+  }
+  .navbar nav .upr {
+    font-size: 0.6rem;
+    display: block;
+  }
+  .navbar nav button {
+    padding: 0.1rem 0.5rem;
+    font-family: poppins;
+    font-size: 0.6rem;
+  }
+  .selectedWork .card-container {
+    grid-template-areas: "a b" "c d";
+  }
+  .selectedWork .card-container .left {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .selectedWork .card-container .right {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .selectedWork .card-container .card-info {
+    padding: 0.1rem 1rem;
+  }
+  .hero img {
+    width: 40%;
+  }
+}/*# sourceMappingURL=style.css.map */
