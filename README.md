@@ -10,18 +10,11 @@ Arik UI is a modern, fully responsive user interface layout built with **HTML** 
 
 - ✅ Mobile-first responsive design
 - 🎨 Clean, minimalistic UI
-- ⚡ Fast-loading and lightweight
-- 💡 Built with Tailwind CSS utility-first classes
-- 🔁 Easily extendable and customizable
+- 💡 Built with SCSS
 
 ## 🛠️ Built With
 
 - **HTML5**
-- **Tailwind CSS v3**
+- **SCSS**
 
-## 📸 Preview
-
-![Arik UI Screenshot](https://arik-ui-repsonsive.vercel.app/your-screenshot-path.jpg) <!-- Optional: Add a real screenshot URL if available -->
-
-## 📁 Folder Structure
 
