@@ -4,7 +4,7 @@
 
 ## 🖼️ Overview
 
-Arik UI is a modern, fully responsive user interface layout built with **HTML** and **Tailwind CSS**. It showcases a sleek and clean design ideal for portfolios, landing pages, or starter UI templates. The design adapts seamlessly across devices — from mobile to desktop — ensuring a smooth user experience.
+Arik UI is a modern, fully responsive user interface layout built with **HTML** and **SCSS**. It showcases a sleek and clean design ideal for portfolios, landing pages, or starter UI templates. The design adapts seamlessly across devices — from mobile to desktop — ensuring a smooth user experience.
 
 ## 🌟 Features
 
